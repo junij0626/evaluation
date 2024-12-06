@@ -9,3 +9,4 @@ Werkzeug==2.3.7
 python-dotenv==1.0.0
 smtplib==0.3.0
 email-validator==2.0.0
+pytesseract
