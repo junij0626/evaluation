@@ -55,7 +55,7 @@ def login():
                 return redirect(url_for('student_dashboard'))
         else:
             flash('Invalid login credentials')
-    return render_template('login.html')
+    return render_template('login.py')
 
 # Staff dashboard
 @app.route('/staff', methods=['GET', 'POST'])
@@ -88,7 +88,7 @@ def staff_dashboard():
                 flash('Files uploaded successfully')
             else:
                 flash('Invalid file type')
-    return render_template('staff_dashboard.html')
+    return render_template('staff_dashboard.py')
 
 # Student dashboard
 @app.route('/student', methods=['GET', 'POST'])
@@ -116,7 +116,7 @@ def student_dashboard():
                 return redirect(url_for('evaluate'))
             else:
                 flash('Invalid file type')
-    return render_template('student_dashboard.html')
+    return render_template('student_dashboard.py')
 
 # OCR and text processing route
 @app.route('/evaluate')
